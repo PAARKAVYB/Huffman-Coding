@@ -13,13 +13,13 @@ Get the input String.
 Create tree nodes.
 
 ### STEP 3:
-Main function to implement huffman coding.
+Main function to implement Huffman coding.
 
 ### STEP 4:
 Calculate frequency of occurrence.
 
 ### STEP 5:
-Print the characters and its huffman code.
+Print the characters and its Huffman code.
  
 ## PROGRAM:
 ```
@@ -39,7 +39,7 @@ class NodeTree(object):
     def children(a):
         return(a.left,a.right)
 
-# Main function to implement huffman coding
+# Main function to implement Huffman coding
 def huffman_code_tree(node,left=True,binString=''):
     if type(node) is str:
         return {node:binString}
@@ -67,7 +67,7 @@ while len(nodes)>1:
     nodes.append((node,c1+c2))
     nodes=sorted(nodes,key=lambda x:x[1],reverse=True)
 
-# Print the characters and its huffman code
+# Print the characters and its Huffman code
 huffmanCode=huffman_code_tree(nodes[0][0])
 print('Char |Huffman code ')
 print('--------------------')
@@ -79,4 +79,4 @@ for(char,frequency) in freq:
 ![output](op1.png)
 
 ## RESULT:
-Thus the huffman coding was implemented to compress the data using python programming.
+Thus the Huffman coding was implemented to compress the data using python programming.
